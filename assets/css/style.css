@@ -1,0 +1,76 @@
+@import url(../css/global.css);
+
+body {
+    background: #f9f9f9;
+}
+header {
+    background: #fff;
+    height: 56px;
+    padding-left: 30px;
+    padding-right: 30px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#container-left {
+    width: 146px;
+}
+#container-right {
+    width: 130px;
+}
+#search-bar {
+    width: 404px;
+    height: 40px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: flex-end;
+}
+#box-search {
+    background: #f8f8f8;
+    width: 57px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-left: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#logo-profile {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+}
+#logo-profile img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+aside {
+    background: #fff;
+    width: 218px;
+    min-height: 100vh;
+}
+.container-aside {
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+.container-aside p {
+    width: 117px;
+}
+#container-01 p {
+    font-weight: bold;
+}
