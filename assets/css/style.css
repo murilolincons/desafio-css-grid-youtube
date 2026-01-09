@@ -2,8 +2,14 @@
 
 body {
     background: #f9f9f9;
+    display: grid;
+    grid-template: 1fr / 218px 1fr;
+    grid-template-areas: 
+    "header header"
+    "aside main";
 }
 header {
+    grid-area: header;
     background: #fff;
     height: 56px;
     padding-left: 30px;
@@ -55,6 +61,7 @@ header {
     width: 100%;
 }
 aside {
+    grid-area: aside;
     background: #fff;
     width: 218px;
     min-height: 100vh;
@@ -71,6 +78,39 @@ aside {
 .container-aside p {
     width: 117px;
 }
-#container-01 p {
+.container-aside.container-01 p {
     font-weight: bold;
+}
+main {
+    grid-area: main;
+    display: grid;
+    grid-template: repeat(3, 275px) / repeat(4, 1fr);
+}
+.container-main {
+    margin: 35px;
+    width: 282px;
+    height: 262px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 3px; 
+}
+.container-main .thumbnail {
+    display: flex;
+    justify-content: center;
+}
+.container-main .container-channel {
+    padding-top: 10px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+.container-channel .title {
+    padding-left: 8px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.container-main .views, .container-main .transmitted {
+    padding-left: 65px;
+    font-size: 12px;
+    color: #515151;
 }
